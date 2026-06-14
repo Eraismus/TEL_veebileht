@@ -1,49 +1,148 @@
 [
   {
-    "name": "Jorgen Ivarsikk",
+    "name": "Kairit Tammets",
     "role": {
-      "et": "Uurimisrühma liige",
-      "en": "Research group member"
+      "et": "Haridustehnoloogia professor",
+      "en": "Professor of Technology-enhanced Learning"
     },
     "bio": {
-      "et": "Lisa siia lühike kirjeldus uurimishuvidest, õpetamisest ja rollist rühmas.",
-      "en": "Add a short description of research interests, teaching, and role in the group."
+      "et": "Kairit Tammets töötab Tallinna Ülikoolis haridustehnoloogia professorina ning ETIS seob tema profiili hariduse, haridustehnoloogia ja teadmussiirdega.",
+      "en": "Kairit Tammets is Professor of Technology-enhanced Learning at Tallinn University, with an ETIS profile connected to education, educational technology, and knowledge transfer."
     },
-    "email": "jorgen.ivarsikk@tlu.ee",
+    "email": "kairit@tlu.ee",
     "image": "/images/member-placeholder.svg",
     "links": [
       {
-        "label": "Profile",
-        "url": "https://www.tlu.ee/"
+        "label": "ETIS",
+        "url": "https://www.etis.ee/CV/Kairit_Tammets/eng"
       }
     ]
   },
   {
-    "name": "Researcher Name",
+    "name": "Elyna Heinmäe",
     "role": {
-      "et": "Teadur",
-      "en": "Researcher"
+      "et": "Haridusinnovatsiooni külalisteadur ja haridustehnoloogia lektor",
+      "en": "Visiting Research Fellow of Educational Innovation and Lecturer of Educational Technology"
     },
     "bio": {
-      "et": "Asenda see tekst päris liikme uurimisteemade ja kontaktidega.",
-      "en": "Replace this text with the member's real research topics and contacts."
+      "et": "Elyna Heinmäe uurimisfookus on digimäng, meediaharidus ning õpetajate ja laste digipädevuste arendamine.",
+      "en": "Elyna Heinmäe focuses on digital play, media education, and developing digital skills for teachers and children."
     },
-    "email": "name@tlu.ee",
-    "image": "/images/member-placeholder.svg",
-    "links": []
+    "email": "elyna.heinmae@tlu.ee",
+    "image": "https://sise.etis.ee/File/DownloadPublic/faf469c7-bd2c-4784-9c58-bd35046fb3ac?type=image/jpeg&name=heinmae%20copy.jpg",
+    "links": [
+      {
+        "label": "ETIS",
+        "url": "https://www.etis.ee/CV/Elyna_Heinmäe/eng"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0009-0001-2378-1378"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=EDHU-9oAAAAJ&view_op=list_works&sortby=pubdate"
+      }
+    ]
   },
   {
-    "name": "Doctoral Student",
+    "name": "Jüri Kurvits",
     "role": {
-      "et": "Doktorant",
-      "en": "Doctoral student"
+      "et": "Õppejõud ja õpetajakoolituse õppekavade arendaja",
+      "en": "Lecturer and teacher education curriculum developer"
     },
     "bio": {
-      "et": "Lisa doktoritöö teema, juhendajad ja seotud projektid.",
-      "en": "Add dissertation topic, supervisors, and related projects."
+      "et": "Jüri Kurvitsal on kogemus matemaatikaõpetaja, õppejõu ja õpetajate koolitaja rollides ning ta on töötanud digivahendite kasutamisega õppeprotsessis.",
+      "en": "Jüri Kurvits has experience as a mathematics teacher, lecturer, and teacher trainer, including work with digital tools in teaching and learning."
     },
-    "email": "doctoral.student@tlu.ee",
+    "email": "jkurvits@gmail.com",
     "image": "/images/member-placeholder.svg",
-    "links": []
+    "links": [
+      {
+        "label": "ETIS",
+        "url": "https://www.etis.ee/CV/JKurvits/eng"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0009-0007-2000-4454"
+      }
+    ]
+  },
+  {
+    "name": "Timo Tobias Ley",
+    "role": {
+      "et": "Õpianalüütika ja haridusinnovatsiooni professor",
+      "en": "Professor for Learning Analytics and Educational Innovation"
+    },
+    "bio": {
+      "et": "Timo Tobias Ley töö keskendub õpianalüütikale, haridusinnovatsioonile ja digitaalsetele õpikeskkondadele.",
+      "en": "Timo Tobias Ley works on learning analytics, educational innovation, and digital learning environments."
+    },
+    "email": "tley@tlu.ee",
+    "image": "https://sise.etis.ee/File/DownloadPublic/f8a95dea-42db-4df7-ac74-a3d3a38eeae8?type=image/jpeg&name=Tobias%20small.JPG",
+    "links": [
+      {
+        "label": "ETIS",
+        "url": "https://www.etis.ee/CV/Tobias_Ley/eng"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0002-2804-2304"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=HSZrpJkAAAAJ&hl=en"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/tobiasley/"
+      }
+    ]
+  },
+  {
+    "name": "Linda Helene Sillat",
+    "role": {
+      "et": "Õpitehnoloogiate dotsent",
+      "en": "Associate Professor of Learning Technologies"
+    },
+    "bio": {
+      "et": "Linda Helene Sillat töötab õpitehnoloogiate dotsendi ja õpitehnoloogiate uurijana ning toetab projektide arendamist.",
+      "en": "Linda Helene Sillat works as Associate Professor and researcher of learning technologies, with experience in project development."
+    },
+    "email": "linda.sillat@tlu.ee",
+    "image": "https://sise.etis.ee/File/DownloadPublic/ec713f7f-1503-4b28-82f0-cfc2202aaa00?type=image/png&name=DTI_1_Linda_Helene_Sillat_foto-Merili-Mihkelsaar.png",
+    "links": [
+      {
+        "label": "ETIS",
+        "url": "https://www.etis.ee/CV/Linda%20Helene_Sillat/eng"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0001-9012-6165"
+      }
+    ]
+  },
+  {
+    "name": "Reet Kasepalu",
+    "role": {
+      "et": "Kasvatusteaduste doktor ja teadur",
+      "en": "PhD in Educational Sciences and researcher"
+    },
+    "bio": {
+      "et": "Reet Kasepalu uurib õpetaja professionaalset arengut tehnoloogiarikkas keskkonnas ja multimodaalse õpianalüütika kasutamist koostööpõhises õppimises.",
+      "en": "Reet Kasepalu researches teacher professional vision, learning analytics in teaching, and multimodal collaboration analytics."
+    },
+    "email": "reetkase@tlu.ee",
+    "image": "https://sise.etis.ee/File/DownloadPublic/363b3a64-5212-45d5-9e7b-d6f70c7bf13b?type=image/jpg&name=IMG_9061.jpg",
+    "links": [
+      {
+        "label": "ETIS",
+        "url": "https://www.etis.ee/CV/Reet_Kasepalu/eng"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0003-3389-8673"
+      }
+    ]
   }
 ]
