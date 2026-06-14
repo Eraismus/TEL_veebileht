@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Jorgen Ivarsikk",
+    "role": {
+      "et": "Uurimisrühma liige",
+      "en": "Research group member"
+    },
+    "bio": {
+      "et": "Lisa siia lühike kirjeldus uurimishuvidest, õpetamisest ja rollist rühmas.",
+      "en": "Add a short description of research interests, teaching, and role in the group."
+    },
+    "email": "jorgen.ivarsikk@tlu.ee",
+    "image": "/images/member-placeholder.svg",
+    "links": [
+      {
+        "label": "Profile",
+        "url": "https://www.tlu.ee/"
+      }
+    ]
+  },
+  {
+    "name": "Researcher Name",
+    "role": {
+      "et": "Teadur",
+      "en": "Researcher"
+    },
+    "bio": {
+      "et": "Asenda see tekst päris liikme uurimisteemade ja kontaktidega.",
+      "en": "Replace this text with the member's real research topics and contacts."
+    },
+    "email": "name@tlu.ee",
+    "image": "/images/member-placeholder.svg",
+    "links": []
+  },
+  {
+    "name": "Doctoral Student",
+    "role": {
+      "et": "Doktorant",
+      "en": "Doctoral student"
+    },
+    "bio": {
+      "et": "Lisa doktoritöö teema, juhendajad ja seotud projektid.",
+      "en": "Add dissertation topic, supervisors, and related projects."
+    },
+    "email": "doctoral.student@tlu.ee",
+    "image": "/images/member-placeholder.svg",
+    "links": []
+  }
+]

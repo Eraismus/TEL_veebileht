@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Product placeholder</title>
+  <desc id="desc">A dashboard-style placeholder for a product or tool image.</desc>
+  <rect width="800" height="500" fill="#f6eee7"/>
+  <rect x="74" y="70" width="652" height="360" rx="14" fill="#ffffff" stroke="#d9dbe1" stroke-width="3"/>
+  <rect x="74" y="70" width="652" height="54" rx="14" fill="#1b1b1f"/>
+  <rect x="74" y="108" width="652" height="16" fill="#1b1b1f"/>
+  <circle cx="112" cy="97" r="8" fill="#e30613"/>
+  <circle cx="138" cy="97" r="8" fill="#147b71"/>
+  <circle cx="164" cy="97" r="8" fill="#1c5d7d"/>
+  <rect x="112" y="164" width="154" height="184" rx="8" fill="#f5f6f8"/>
+  <rect x="302" y="164" width="160" height="44" rx="8" fill="#dfeaf0"/>
+  <rect x="490" y="164" width="160" height="44" rx="8" fill="#f2d8da"/>
+  <rect x="302" y="240" width="348" height="18" rx="9" fill="#d9dbe1"/>
+  <rect x="302" y="282" width="284" height="18" rx="9" fill="#d9dbe1"/>
+  <rect x="302" y="324" width="318" height="18" rx="9" fill="#d9dbe1"/>
+  <path d="M122 326c18-74 54-111 108-111s90 37 108 111" fill="#147b71" opacity=".18"/>
+  <circle cx="230" cy="212" r="38" fill="#147b71"/>
+</svg>

@@ -1,0 +1,75 @@
+{
+  "name": {
+    "et": "TEL uurimisrühm",
+    "en": "TEL Research Group"
+  },
+  "institution": {
+    "et": "Tallinna Ülikool",
+    "en": "Tallinn University"
+  },
+  "unit": {
+    "et": "Haridustehnoloogia keskus",
+    "en": "Centre for Educational Technology"
+  },
+  "tagline": {
+    "et": "Uurime ja loome õppimist toetavaid tehnoloogiaid, andmepõhiseid lahendusi ja õpetamispraktikaid.",
+    "en": "We research and build technologies, data-informed tools, and teaching practices that support learning."
+  },
+  "intro": {
+    "et": "Meie töö ühendab haridusteaduse, disaini, tehnoloogia ja praktilise kooliarenduse. See leht koondab rühma liikmed, projektid, tööriistad, tegevusplaani ja kontaktid.",
+    "en": "Our work connects educational research, design, technology, and practical school development. This site brings together the group's members, projects, tools, roadmap, and contact points."
+  },
+  "focusAreas": [
+    {
+      "title": {
+        "et": "Õpianalüütika",
+        "en": "Learning analytics"
+      },
+      "description": {
+        "et": "Õppimise andmed, tagasiside ja otsustustugi õpetajatele ning õppijatele.",
+        "en": "Learning data, feedback, and decision support for teachers and learners."
+      }
+    },
+    {
+      "title": {
+        "et": "Digipedagoogika",
+        "en": "Digital pedagogy"
+      },
+      "description": {
+        "et": "Tõenduspõhised digitaalsed õppestsenaariumid ja õpetajate professionaalne areng.",
+        "en": "Evidence-informed digital learning scenarios and teacher professional development."
+      }
+    },
+    {
+      "title": {
+        "et": "Õpitehnoloogiate disain",
+        "en": "Learning technology design"
+      },
+      "description": {
+        "et": "Prototüübid, õppevara ja teenused, mis liiguvad uuringutest kasutusse.",
+        "en": "Prototypes, learning materials, and services that move from research into use."
+      }
+    }
+  ],
+  "contact": {
+    "email": "tel@tlu.ee",
+    "address": {
+      "et": "Narva mnt 25, 10120 Tallinn, Eesti",
+      "en": "Narva mnt 25, 10120 Tallinn, Estonia"
+    },
+    "links": [
+      {
+        "label": "Tallinn University",
+        "url": "https://www.tlu.ee/"
+      },
+      {
+        "label": "Centre for Educational Technology",
+        "url": "https://www.tlu.ee/dt/haridustehnoloogia-keskus"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Eraismus/TEL_veebileht"
+      }
+    ]
+  }
+}

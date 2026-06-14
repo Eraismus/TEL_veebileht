@@ -1,0 +1,350 @@
+---
+import { content, type Language, type LocalizedText } from "../data/content";
+import "../styles/global.css";
+
+const languages: { code: Language; label: string }[] = [
+  { code: "et", label: "ET" },
+  { code: "en", label: "EN" }
+];
+
+const t = (value: LocalizedText, language: Language) => value[language];
+
+const navItems = [
+  { id: "members", label: { et: "Liikmed", en: "Members" } },
+  { id: "projects", label: { et: "Projektid", en: "Projects" } },
+  { id: "products", label: { et: "Tooted", en: "Products" } },
+  { id: "plan", label: { et: "Plaan", en: "Plan" } },
+  { id: "contacts", label: { et: "Kontakt", en: "Contacts" } }
+];
+
+const assetPath = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+---
+
+<!doctype html>
+<html lang="et" data-language="et">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={content.site.tagline.en} />
+    <title>{content.site.name.en} | {content.site.institution.en}</title>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="TEL Research Group home">
+        <span class="brand-mark">TEL</span>
+        <span>
+          <span class="brand-title">
+            {languages.map(({ code }) => (
+              <span data-lang={code}>{t(content.site.name, code)}</span>
+            ))}
+          </span>
+          <span class="brand-subtitle">
+            {languages.map(({ code }) => (
+              <span data-lang={code}>{t(content.site.institution, code)}</span>
+            ))}
+          </span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        {navItems.map((item) => (
+          <a href={`#${item.id}`}>
+            {languages.map(({ code }) => (
+              <span data-lang={code}>{t(item.label, code)}</span>
+            ))}
+          </a>
+        ))}
+      </nav>
+      <div class="language-toggle" aria-label="Language selector">
+        {languages.map(({ code, label }) => (
+          <button type="button" data-set-language={code} aria-pressed={code === "et" ? "true" : "false"}>
+            {label}
+          </button>
+        ))}
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            {languages.map(({ code }) => (
+              <span data-lang={code}>{t(content.site.unit, code)}</span>
+            ))}
+          </p>
+          <h1 id="hero-title">
+            {languages.map(({ code }) => (
+              <span data-lang={code}>{t(content.site.name, code)}</span>
+            ))}
+          </h1>
+          <p class="lead">
+            {languages.map(({ code }) => (
+              <span data-lang={code}>{t(content.site.tagline, code)}</span>
+            ))}
+          </p>
+          <p class="intro">
+            {languages.map(({ code }) => (
+              <span data-lang={code}>{t(content.site.intro, code)}</span>
+            ))}
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">
+              <span data-lang="et">Vaata projekte</span>
+              <span data-lang="en">View projects</span>
+            </a>
+            <a class="button secondary" href="#contacts">
+              <span data-lang="et">Võta ühendust</span>
+              <span data-lang="en">Contact us</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src={assetPath("/images/group-placeholder.svg")} alt="" />
+        </div>
+      </section>
+
+      <section class="focus-band" aria-label="Focus areas">
+        <div class="section-shell focus-grid">
+          {content.site.focusAreas.map((area) => (
+            <article class="focus-card">
+              <h2>
+                {languages.map(({ code }) => (
+                  <span data-lang={code}>{t(area.title, code)}</span>
+                ))}
+              </h2>
+              <p>
+                {languages.map(({ code }) => (
+                  <span data-lang={code}>{t(area.description, code)}</span>
+                ))}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="members" class="section-shell content-section">
+        <div class="section-heading">
+          <p class="eyebrow">
+            <span data-lang="et">Inimesed</span>
+            <span data-lang="en">People</span>
+          </p>
+          <h2>
+            <span data-lang="et">Meie liikmed</span>
+            <span data-lang="en">Our members</span>
+          </h2>
+        </div>
+        <div class="member-grid">
+          {content.members.map((member) => (
+            <article class="member-card">
+              <img src={assetPath(member.image)} alt="" loading="lazy" />
+              <div>
+                <h3>{member.name}</h3>
+                <p class="meta">
+                  {languages.map(({ code }) => (
+                    <span data-lang={code}>{t(member.role, code)}</span>
+                  ))}
+                </p>
+                <p>
+                  {languages.map(({ code }) => (
+                    <span data-lang={code}>{t(member.bio, code)}</span>
+                  ))}
+                </p>
+                <div class="inline-links">
+                  <a href={`mailto:${member.email}`}>{member.email}</a>
+                  {member.links.map((link) => (
+                    <a href={link.url}>{link.label}</a>
+                  ))}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="projects" class="section-shell content-section">
+        <div class="section-heading">
+          <p class="eyebrow">
+            <span data-lang="et">Uurimistöö</span>
+            <span data-lang="en">Research</span>
+          </p>
+          <h2>
+            <span data-lang="et">Projektid</span>
+            <span data-lang="en">Projects</span>
+          </h2>
+        </div>
+        <div class="list-stack">
+          {content.projects.map((project) => (
+            <article class="project-row">
+              <div>
+                <p class="meta">{project.period}</p>
+                <h3>
+                  {languages.map(({ code }) => (
+                    <span data-lang={code}>{t(project.title, code)}</span>
+                  ))}
+                </h3>
+                <p>
+                  {languages.map(({ code }) => (
+                    <span data-lang={code}>{t(project.summary, code)}</span>
+                  ))}
+                </p>
+              </div>
+              <dl>
+                <div>
+                  <dt>
+                    <span data-lang="et">Staatus</span>
+                    <span data-lang="en">Status</span>
+                  </dt>
+                  <dd>
+                    {languages.map(({ code }) => (
+                      <span data-lang={code}>{t(project.status, code)}</span>
+                    ))}
+                  </dd>
+                </div>
+                <div>
+                  <dt>
+                    <span data-lang="et">Partnerid</span>
+                    <span data-lang="en">Partners</span>
+                  </dt>
+                  <dd>
+                    {languages.map(({ code }) => (
+                      <span data-lang={code}>{t(project.partner, code)}</span>
+                    ))}
+                  </dd>
+                </div>
+              </dl>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="products" class="content-section product-band">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">
+              <span data-lang="et">Väljundid</span>
+              <span data-lang="en">Outputs</span>
+            </p>
+            <h2>
+              <span data-lang="et">Tooted ja tööriistad</span>
+              <span data-lang="en">Products and tools</span>
+            </h2>
+          </div>
+          <div class="product-grid">
+            {content.products.map((product) => (
+              <article class="product-card">
+                <img src={assetPath("/images/product-placeholder.svg")} alt="" loading="lazy" />
+                <div class="card-body">
+                  <p class="meta">
+                    {languages.map(({ code }) => (
+                      <span data-lang={code}>{t(product.type, code)} · {t(product.status, code)}</span>
+                    ))}
+                  </p>
+                  <h3>
+                    {languages.map(({ code }) => (
+                      <span data-lang={code}>{t(product.title, code)}</span>
+                    ))}
+                  </h3>
+                  <p>
+                    {languages.map(({ code }) => (
+                      <span data-lang={code}>{t(product.summary, code)}</span>
+                    ))}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="plan" class="section-shell content-section">
+        <div class="section-heading">
+          <p class="eyebrow">
+            <span data-lang="et">Tegevussuunad</span>
+            <span data-lang="en">Roadmap</span>
+          </p>
+          <h2>
+            <span data-lang="et">Plaan</span>
+            <span data-lang="en">Plan</span>
+          </h2>
+        </div>
+        <ol class="timeline">
+          {content.plan.map((item) => (
+            <li>
+              <span class="timeline-period">
+                {languages.map(({ code }) => (
+                  <span data-lang={code}>{t(item.period, code)}</span>
+                ))}
+              </span>
+              <div>
+                <h3>
+                  {languages.map(({ code }) => (
+                    <span data-lang={code}>{t(item.title, code)}</span>
+                  ))}
+                </h3>
+                <p>
+                  {languages.map(({ code }) => (
+                    <span data-lang={code}>{t(item.summary, code)}</span>
+                  ))}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section id="contacts" class="contact-band">
+        <div class="section-shell contact-grid">
+          <div>
+            <p class="eyebrow">
+              <span data-lang="et">Kontakt</span>
+              <span data-lang="en">Contacts</span>
+            </p>
+            <h2>
+              <span data-lang="et">Räägime koostööst</span>
+              <span data-lang="en">Let's discuss collaboration</span>
+            </h2>
+          </div>
+          <address>
+            <a href={`mailto:${content.site.contact.email}`}>{content.site.contact.email}</a>
+            <span>
+              {languages.map(({ code }) => (
+                <span data-lang={code}>{t(content.site.contact.address, code)}</span>
+              ))}
+            </span>
+            <span>
+              {languages.map(({ code }) => (
+                <span data-lang={code}>{t(content.site.unit, code)} · {t(content.site.institution, code)}</span>
+              ))}
+            </span>
+          </address>
+          <div class="footer-links">
+            {content.site.contact.links.map((link) => (
+              <a href={link.url}>{link.label}</a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const root = document.documentElement;
+      const buttons = Array.from(document.querySelectorAll("[data-set-language]"));
+      const savedLanguage = localStorage.getItem("tel-language");
+      const initialLanguage = savedLanguage === "en" ? "en" : "et";
+
+      function setLanguage(language) {
+        root.dataset.language = language;
+        root.lang = language;
+        localStorage.setItem("tel-language", language);
+        buttons.forEach((button) => {
+          button.setAttribute("aria-pressed", button.dataset.setLanguage === language ? "true" : "false");
+        });
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.setLanguage));
+      });
+
+      setLanguage(initialLanguage);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Research group placeholder</title>
+  <desc id="desc">A structured abstract placeholder for a research group image.</desc>
+  <rect width="960" height="720" fill="#f5f6f8"/>
+  <rect x="96" y="92" width="768" height="536" rx="16" fill="#ffffff" stroke="#d9dbe1" stroke-width="3"/>
+  <rect x="96" y="92" width="768" height="72" rx="16" fill="#e30613"/>
+  <rect x="96" y="140" width="768" height="24" fill="#e30613"/>
+  <circle cx="230" cy="308" r="72" fill="#1c5d7d"/>
+  <circle cx="480" cy="286" r="86" fill="#147b71"/>
+  <circle cx="722" cy="308" r="72" fill="#9d0710"/>
+  <path d="M132 562c24-96 88-150 184-150s160 54 184 150" fill="#dfeaf0"/>
+  <path d="M320 562c24-118 88-184 160-184s136 66 160 184" fill="#e8f1ef"/>
+  <path d="M460 562c24-96 88-150 184-150s160 54 184 150" fill="#f6eee7"/>
+  <rect x="174" y="198" width="244" height="18" rx="9" fill="#d9dbe1"/>
+  <rect x="542" y="198" width="244" height="18" rx="9" fill="#d9dbe1"/>
+  <rect x="174" y="602" width="612" height="16" rx="8" fill="#d9dbe1"/>
+</svg>

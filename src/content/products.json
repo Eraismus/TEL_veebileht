@@ -1,0 +1,40 @@
+[
+  {
+    "title": {
+      "et": "Õpetaja andmelaud",
+      "en": "Teacher Dashboard"
+    },
+    "type": {
+      "et": "Prototüüp",
+      "en": "Prototype"
+    },
+    "status": {
+      "et": "Arendamisel",
+      "en": "In development"
+    },
+    "summary": {
+      "et": "Näidisvaade õppimise edenemise, sekkumiste ja tagasiside planeerimiseks.",
+      "en": "A sample interface for tracking learning progress, planning interventions, and feedback."
+    },
+    "url": "#"
+  },
+  {
+    "title": {
+      "et": "Digipedagoogika töölehed",
+      "en": "Digital Pedagogy Worksheets"
+    },
+    "type": {
+      "et": "Õppematerjal",
+      "en": "Learning material"
+    },
+    "status": {
+      "et": "Avaldamisel",
+      "en": "Preparing for release"
+    },
+    "summary": {
+      "et": "Struktureeritud materjalid koolituste, töötubade ja iseseisva töö toetamiseks.",
+      "en": "Structured materials for training sessions, workshops, and independent study."
+    },
+    "url": "#"
+  }
+]

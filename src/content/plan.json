@@ -1,0 +1,44 @@
+[
+  {
+    "period": {
+      "et": "2026 kevad",
+      "en": "Spring 2026"
+    },
+    "title": {
+      "et": "Veebilehe ja sisumudeli avaldamine",
+      "en": "Publish website and content model"
+    },
+    "summary": {
+      "et": "Viime rühma liikmed, projektid ja kontaktid GitHubis hallatavasse struktuuri.",
+      "en": "Move members, projects, and contacts into a GitHub-managed structure."
+    }
+  },
+  {
+    "period": {
+      "et": "2026 sügis",
+      "en": "Autumn 2026"
+    },
+    "title": {
+      "et": "Projektide ja toodete portfoolio täiendamine",
+      "en": "Expand project and product portfolio"
+    },
+    "summary": {
+      "et": "Lisame tegelikud projektid, partnerid, tulemused ja avalikud väljundid.",
+      "en": "Add real projects, partners, outcomes, and public outputs."
+    }
+  },
+  {
+    "period": {
+      "et": "2027",
+      "en": "2027"
+    },
+    "title": {
+      "et": "Mõju ja kasutuslugude kogumine",
+      "en": "Collect impact and use cases"
+    },
+    "summary": {
+      "et": "Koondame näited koolidest, koolitustest ja prototüüpide kasutamisest.",
+      "en": "Collect examples from schools, training activities, and prototype use."
+    }
+  }
+]

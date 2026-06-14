@@ -1,0 +1,62 @@
+[
+  {
+    "title": {
+      "et": "Õpianalüütika õpetaja tööriistades",
+      "en": "Learning Analytics in Teacher Tools"
+    },
+    "period": "2026-2028",
+    "status": {
+      "et": "Planeerimisel",
+      "en": "Planning"
+    },
+    "partner": {
+      "et": "Partnerid lisamisel",
+      "en": "Partners to be added"
+    },
+    "summary": {
+      "et": "Projekt uurib, kuidas õppimisandmed saavad toetada õpetaja igapäevaseid otsuseid ja tagasisidet.",
+      "en": "The project studies how learning data can support teachers' daily decisions and feedback."
+    },
+    "url": "#"
+  },
+  {
+    "title": {
+      "et": "Digipädevuse õpistsenaariumid",
+      "en": "Digital Competence Learning Scenarios"
+    },
+    "period": "2025-2027",
+    "status": {
+      "et": "Käimas",
+      "en": "Active"
+    },
+    "partner": {
+      "et": "Koolid ja ülikooli partnerid",
+      "en": "Schools and university partners"
+    },
+    "summary": {
+      "et": "Loome ja hindame õppestsenaariume, mis aitavad õpetajatel digipädevust süsteemselt arendada.",
+      "en": "We design and evaluate learning scenarios that help teachers develop digital competence systematically."
+    },
+    "url": "#"
+  },
+  {
+    "title": {
+      "et": "Tehisintellekt õppimises",
+      "en": "AI in Learning"
+    },
+    "period": "2026",
+    "status": {
+      "et": "Idee",
+      "en": "Concept"
+    },
+    "partner": {
+      "et": "Partnerid täpsustamisel",
+      "en": "Partners to be confirmed"
+    },
+    "summary": {
+      "et": "Uurimissuund keskendub tehisintellekti mõtestatud, eetilisele ja pedagoogiliselt põhjendatud kasutamisele.",
+      "en": "This research direction focuses on meaningful, ethical, and pedagogically grounded uses of AI."
+    },
+    "url": "#"
+  }
+]
