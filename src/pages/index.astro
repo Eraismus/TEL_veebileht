@@ -12,7 +12,7 @@ const t = (value: LocalizedText, language: Language) => value[language];
 const navItems = [
   { id: "members", label: { et: "Liikmed", en: "Members" } },
   { id: "projects", label: { et: "Projektid", en: "Projects" } },
-  { id: "products", label: { et: "Tooted", en: "Products" } },
+  { id: "products", label: { et: "Lahendused", en: "Products" } },
   { id: "plan", label: { et: "Plaan", en: "Plan" } },
   { id: "contacts", label: { et: "Kontakt", en: "Contacts" } }
 ];
@@ -38,7 +38,7 @@ const assetPath = (path: string) => {
     <header class="site-header" aria-label="Site header">
       <a class="brand" href="#top" aria-label="TEL Research Group home">
         <span class="brand-mark">TEL</span>
-        <span>
+        <span class="brand-text">
           <span class="brand-title">
             {languages.map(({ code }) => (
               <span data-lang={code}>{t(content.site.name, code)}</span>
@@ -322,7 +322,7 @@ const assetPath = (path: string) => {
               <span data-lang="en">Outputs</span>
             </p>
             <h2>
-              <span data-lang="et">Tooted ja tööriistad</span>
+              <span data-lang="et">Lahendused ja tööriistad</span>
               <span data-lang="en">Products and tools</span>
             </h2>
           </div>

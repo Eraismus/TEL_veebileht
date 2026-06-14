@@ -85,11 +85,17 @@ html[data-language="en"] [data-lang="en"] {
   gap: 10px;
   align-items: center;
   min-width: 230px;
+  max-width: 100%;
   color: var(--color-ink);
   text-decoration: none;
 }
 
+.brand-text {
+  min-width: 0;
+}
+
 .brand-mark {
+  flex: 0 0 auto;
   display: grid;
   place-items: center;
   width: 36px;
@@ -111,6 +117,7 @@ html[data-language="en"] [data-lang="en"] {
   font-size: 0.96rem;
   font-weight: 800;
   line-height: 1.15;
+  overflow-wrap: anywhere;
 }
 
 .brand-subtitle {
@@ -1012,6 +1019,11 @@ address {
   .brand-mark {
     width: 34px;
     height: 34px;
+  }
+
+  .brand-title {
+    font-size: 0.9rem;
+    line-height: 1.12;
   }
 
   .brand-subtitle {
