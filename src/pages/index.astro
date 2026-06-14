@@ -327,11 +327,11 @@ const assetPath = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/
 
     <script>
       const root = document.documentElement;
-      const buttons = Array.from(document.querySelectorAll("[data-set-language]"));
+      const buttons = Array.from(document.querySelectorAll("[data-set-language]")) as HTMLButtonElement[];
       const savedLanguage = localStorage.getItem("tel-language");
       const initialLanguage = savedLanguage === "en" ? "en" : "et";
 
-      function setLanguage(language) {
+      function setLanguage(language: "et" | "en") {
         root.dataset.language = language;
         root.lang = language;
         localStorage.setItem("tel-language", language);
@@ -341,7 +341,9 @@ const assetPath = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/
       }
 
       buttons.forEach((button) => {
-        button.addEventListener("click", () => setLanguage(button.dataset.setLanguage));
+        button.addEventListener("click", () => {
+          setLanguage(button.dataset.setLanguage === "en" ? "en" : "et");
+        });
       });
 
       setLanguage(initialLanguage);
