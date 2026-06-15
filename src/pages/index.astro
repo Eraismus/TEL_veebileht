@@ -24,6 +24,16 @@ const assetPath = (path: string) => {
 
   return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
 };
+
+const initials = (name: string) =>
+  name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("");
+
+const hasMemberPhoto = (path: string) => !path.includes("member-placeholder.svg");
 ---
 
 <!doctype html>
@@ -132,6 +142,7 @@ const assetPath = (path: string) => {
             alt=""
             decoding="async"
             fetchpriority="high"
+            onerror="this.closest('.hero-media').classList.add('is-missing'); this.remove();"
           />
           <figcaption>
             <span data-lang="et">Õpianalüütika, disain ja kooliarendus ühises töövoos.</span>
@@ -188,7 +199,17 @@ const assetPath = (path: string) => {
         <div class="member-grid">
           {content.members.map((member) => (
             <article class="member-card">
-              <img src={assetPath(member.image)} alt="" loading="lazy" />
+              <figure class:list={["member-photo", { "is-missing": !hasMemberPhoto(member.image) }]}>
+                <span class="member-initials" aria-hidden="true">{initials(member.name)}</span>
+                {hasMemberPhoto(member.image) && (
+                  <img
+                    src={assetPath(member.image)}
+                    alt=""
+                    loading="lazy"
+                    onerror="this.closest('.member-photo').classList.add('is-missing'); this.remove();"
+                  />
+                )}
+              </figure>
               <div>
                 <h3>{member.name}</h3>
                 <p class="meta">
@@ -284,7 +305,21 @@ const assetPath = (path: string) => {
           <div class="product-grid">
             {content.products.map((product) => (
               <article class="product-card">
-                <img src={assetPath(product.image ?? "/images/product-placeholder.svg")} alt="" loading="lazy" />
+                <figure class:list={["product-media", { "is-missing": !product.image }]}>
+                  <span class="product-fallback" aria-hidden="true">
+                    {languages.map(({ code }) => (
+                      <span data-lang={code}>{t(product.title, code)}</span>
+                    ))}
+                  </span>
+                  {product.image && (
+                    <img
+                      src={assetPath(product.image)}
+                      alt=""
+                      loading="lazy"
+                      onerror="this.closest('.product-media').classList.add('is-missing'); this.remove();"
+                    />
+                  )}
+                </figure>
                 <div class="card-body">
                   <p class="meta">
                     {languages.map(({ code }) => (
