@@ -102,102 +102,57 @@ const assetPath = (path: string) => {
               <span data-lang="en">Contact us</span>
             </a>
           </div>
+          <dl class="hero-signals" aria-label="Research group overview">
+            <div>
+              <dt>{content.members.length}</dt>
+              <dd>
+                <span data-lang="et">liiget</span>
+                <span data-lang="en">members</span>
+              </dd>
+            </div>
+            <div>
+              <dt>{content.projects.length}</dt>
+              <dd>
+                <span data-lang="et">projekti</span>
+                <span data-lang="en">projects</span>
+              </dd>
+            </div>
+            <div>
+              <dt>{content.products.length}</dt>
+              <dd>
+                <span data-lang="et">lahendust</span>
+                <span data-lang="en">outputs</span>
+              </dd>
+            </div>
+          </dl>
         </div>
-        <div class="hero-media hero-animation" aria-label="Animated view from a learning dashboard to a classroom">
-          <div class="zoom-stage" aria-hidden="true">
-            <div class="zoom-frame zoom-dashboard">
-              <div class="dashboard-panel">
-                <div class="dashboard-sidebar">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div class="dashboard-main">
-                  <div class="metric-row">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <div class="chart-area">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <b></b>
-                  </div>
-                  <div class="student-grid">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <figure class="hero-media">
+          <img
+            src={assetPath("/images/tel-hero-learning-lab.jpg")}
+            alt=""
+            decoding="async"
+            fetchpriority="high"
+          />
+          <figcaption>
+            <span data-lang="et">Õpianalüütika, disain ja kooliarendus ühises töövoos.</span>
+            <span data-lang="en">Learning analytics, design, and school development in one workflow.</span>
+          </figcaption>
+        </figure>
+      </section>
 
-            <div class="zoom-frame zoom-computer">
-              <div class="laptop">
-                <div class="laptop-screen">
-                  <div class="mini-dashboard">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="laptop-base"></div>
-              </div>
-            </div>
-
-            <div class="zoom-frame zoom-teacher">
-              <div class="teacher-scene">
-                <div class="teacher-board">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div class="teacher-person">
-                  <span class="head"></span>
-                  <span class="body"></span>
-                  <span class="arm"></span>
-                </div>
-                <div class="desk-computer">
-                  <span></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="zoom-frame zoom-classroom">
-              <div class="classroom-scene">
-                <div class="classroom-board">
-                  <span></span>
-                  <span></span>
-                </div>
-                <div class="classroom-teacher">
-                  <span class="head"></span>
-                  <span class="body"></span>
-                </div>
-                <div class="classroom-laptop">
-                  <span></span>
-                </div>
-                <div class="student student-one">
-                  <span></span>
-                </div>
-                <div class="student student-two">
-                  <span></span>
-                </div>
-                <div class="student student-three">
-                  <span></span>
-                </div>
-                <div class="student student-four">
-                  <span></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section class="section-shell intro-panel" aria-label="Research group summary">
+        <p>
+          <span data-lang="et">
+            TEL uurimisrühm ühendab haridusteaduse, disainipraktika ja tehnoloogiaarenduse, et luua teadmisi ja tööriistu, mida saab kasutada päris õppekeskkondades.
+          </span>
+          <span data-lang="en">
+            TEL connects educational research, design practice, and technology development to create knowledge and tools for real learning environments.
+          </span>
+        </p>
+        <a href="#members">
+          <span data-lang="et">Tutvu rühmaga</span>
+          <span data-lang="en">Meet the group</span>
+        </a>
       </section>
 
       <section class="focus-band" aria-label="Focus areas">
@@ -329,7 +284,7 @@ const assetPath = (path: string) => {
           <div class="product-grid">
             {content.products.map((product) => (
               <article class="product-card">
-                <img src={assetPath("/images/product-placeholder.svg")} alt="" loading="lazy" />
+                <img src={assetPath(product.image ?? "/images/product-placeholder.svg")} alt="" loading="lazy" />
                 <div class="card-body">
                   <p class="meta">
                     {languages.map(({ code }) => (

@@ -41,6 +41,7 @@ export interface Product {
   type: LocalizedText;
   status: LocalizedText;
   summary: LocalizedText;
+  image?: string;
   url: string;
 }
 
